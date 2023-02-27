@@ -1,9 +1,16 @@
 /* style for the header */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+flex-direction: column;
+background-color:#ECF2FF;
+
+}
 .header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
+
+display: none;
 }
 
 /* style for the container */
@@ -14,9 +21,15 @@
 
 /* style for the sidebar */
 .sidebar {
-  background-color: #f1f1f1;
+
+  background-color: white;
+  height: 100%;
   width: 200px;
-  padding: 20px;
+
+
+padding: 20px;
+padding-top: 150px;
+
 }
 
 /* style for the sidebar links */
@@ -24,38 +37,79 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+
 }
 
 .sidebar ul li {
   margin-bottom: 10px;
+
 }
 
 .sidebar ul li a {
   display: block;
-  color: #333;
+  color: #808080;
   padding: 10px;
-  text-decoration: none;
+
+
+ text-decoration: none;
+ transition: background-color 0.5s;
 }
 
-.sidebar ul li a:hover {
-  background-color: #ddd;
+.sidebar ul li a:hover ,
+  .sidebar ul li a:focus,
+.sidebar ul li a:active {
+
+  color:#472183 ;
+  font-weight: bold;
+
+
 }
 
 /* style for the main content */
 .main-content {
   padding: 20px;
   flex: 1;
+  background-color:#ECF2FF;
+  height:100%;
+
+
+
+
+
+
 }
 
 /* style for the vehicle list */
 .vehicle-list {
   margin-bottom: 20px;
   height:100%;
+  align-content: center;
+
 }
 
 .vehicle-list h2 {
-  margin-top: 0;
+  text-align: center;
+}
+.vehicle-list h2 .word1 {
+  margin-top: 50;
+text-align: center;
+color:#472183;
+padding left: 50;
+font-weight: bold;
 
+
+
+}
+.vehicle-list h2 .word2 {
+  margin-top: 50;
+color:black;
+text-align: center;
+font-weight: bold;
+
+
+
+padding left: 50;
 }
 
 .vehicle-table {
