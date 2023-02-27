@@ -1,0 +1,177 @@
+<html>
+  <head>
+    <title>MY WEBSITE</title>
+    <link rel="stylesheet" href="dettt.css">
+  </head>
+  <body>
+
+    <div class="header">
+     <h1>My Website</h1>
+   </div>
+   <div class="container">
+     <div class="sidebar">
+        <ul>
+         <li><a href="#">Dashboard</a></li>
+         <li><a href="#">Vehicles</a></li>
+         <li><a href="#">Users</a></li>
+         <li><a href="#">Settings</a></li>
+       </ul>
+     </div>
+     <div class="main-content">
+<div class="vehicle-list">
+  <h2>Vehicle List</h2>
+  <div class="vehicle-table">
+    <table>
+      <thead>
+        <tr>
+          <th>VIN</th>
+          <th>Number of Trips</th>
+          <th>Vehicle Type</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12345678901234567</td>
+          <td>20</td>
+          <td>SUV</td>
+          <td>
+            <button class="btn-info" onclick="showVehicleDetails('12345678901234567')">Info</button>
+
+          </td>
+        </tr>
+        <tr>
+          <td>23456789012345678</td>
+          <td>15</td>
+          <td>Sedan</td>
+          <td>
+            <button class="btn-info" onclick="showVehicleDetails('23456789012345678')">Info</button>
+
+          </td>
+        </tr>
+        <tr>
+          <td>34567890123456789</td>
+          <td>10</td>
+          <td>Hatchback</td>
+          <td>
+            <button class="btn-info" onclick="showVehicleDetails('34567890123456789')">Info</button>
+
+          </td>
+        </tr>
+        <tr>
+          <td>47829344540493309</td>
+          <td>17</td>
+          <td>Coupe</td>
+          <td>
+            <button class="btn-info" onclick="showVehicleDetails('47829344540493309')">Info</button>
+
+          </td>
+        </tr>
+        <tr>
+          <td>34567890987654321</td>
+          <td>3</td>
+          <td>Sports car</td>
+          <td>
+            <button class="btn-info" onclick="showVehicleDetails('34567890987654321')">Info</button>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="pagination">
+  <a href="#" class="prev">&laquo; Prev</a>
+  <a href="#" class="page">1</a>
+  <a href="#" class="page">2</a>
+  <a href="#" class="page">3</a>
+  <a href="#" class="next">Next &raquo;</a>
+</div>
+
+...
+
+<div class="vehicle-drawer" id="vehicle-drawer">
+<div class="vehicle-drawer-content">
+<span class="close" onclick="hideVehicleDetails()">&times;</span>
+<h3>Vehicle Details</h3>
+<table>
+ <tr>
+   <td><strong>VIN:</strong></td>
+   <td id="vehicle-vin"></td>
+ </tr>
+ <tr>
+   <td><strong>Device Info:</strong></td>
+   <td id="vehicle-device-info"></td>
+ </tr>
+ <tr>
+   <td><strong>Location:</strong></td>
+   <td id="vehicle-location"></td>
+ </tr>
+ <tr>
+   <td><strong>Battery Status:</strong></td>
+   <td id="vehicle-battery-status"></td>
+ </tr>
+ <tr>
+   <td><strong>GPRS:</strong></td>
+   <td id="vehicle-gprs"></td>
+ </tr>
+ <tr>
+   <td><strong>Alarm:</strong></td>
+   <td id="vehicle-alarm"></td>
+ </tr>
+ <tr>
+   <td><strong>Current Trip Status:</strong></td>
+   <td id="vehicle-current-trip-status"></td>
+ </tr>
+</table>
+<button class="btn-edit"onclick="editVehicle()">Edit</button>
+<button class="btn-delete onclick="deleteVehicle()">Delete</button>
+</div>
+
+<div class="edit-vehicle-dialog" id="edit-vehicle-dialog">
+  <div class="edit-vehicle-dialog-content">
+    <span class="close" onclick="hideEditVehicleDialog()">&times;</span>
+    <h3>Edit Vehicle Details</h3>
+    <form>
+      <div class="form-group">
+        <label for="device-info">Device Info:</label>
+        <input type="text" id="device-info" name="device-info">
+      </div>
+      <div class="form-group">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location">
+      </div>
+      <div class="form-group">
+        <label for="battery-status">Battery Status:</label>
+        <input type="text" id="battery-status" name="battery-status">
+      </div>
+      <div class="form-group">
+        <label for="gprs">GPRS:</label>
+        <input type="text" id="gprs" name="gprs">
+      </div>
+      <div class="form-group">
+        <label for="alarm">Alarm:</label>
+        <input type="text" id="alarm" name="alarm">
+      </div>
+      <div class="form-group">
+        <label for="current-trip-status">Current Trip Status:</label>
+        <input type="text" id="current-trip-status" name="current-trip-status">
+      </div>
+      <button type="submit" class="btn-save" onclick="history.go(-1)">Save</button>
+
+
+    </form>
+  </div>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+   <script src="d.js"></script>
+ </body>
+</html>

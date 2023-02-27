@@ -1,0 +1,291 @@
+/* style for the header */
+.header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* style for the container */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* style for the sidebar */
+.sidebar {
+  background-color: #f1f1f1;
+  width: 200px;
+  padding: 20px;
+}
+
+/* style for the sidebar links */
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  display: block;
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  background-color: #ddd;
+}
+
+/* style for the main content */
+.main-content {
+  padding: 20px;
+  flex: 1;
+}
+
+/* style for the vehicle list */
+.vehicle-list {
+  margin-bottom: 20px;
+  height:100%;
+}
+
+.vehicle-list h2 {
+  margin-top: 0;
+
+}
+
+.vehicle-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+   max-width: 100%;
+}
+
+.vehicle-table th,
+.vehicle-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+
+.vehicle-table th {
+  background-color: #f2f2f2;
+}
+
+.vehicle-table td:last-child {
+  text-align: center;
+}
+
+
+.btn-info {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  background-color: #ddd;
+}
+
+.pagination .prev {
+  margin-right: 10px;
+}
+
+.pagination .next {
+  margin-left: 10px;
+}
+
+/* style for the vehicle drawer */
+.vehicle-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.vehicle-drawer-content {
+  background-color: #fff;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 5px;
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+border-radius: 10px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.vehicle-drawer-content h3 {
+  margin-top: 0;
+}
+
+.vehicle-drawer-content table {
+  width: 100%;
+  margin-bottom: 20px;
+   border-collapse: collapse;
+}
+.vehicle-drawer-content table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.vehicle-drawer-content table td:first-child {
+  width: 200px;
+  font-weight: bold;
+}
+
+.vehicle-drawer-content input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.vehicle-drawer-content button {
+margin-right: 10px;
+padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+}
+
+.vehicle-drawer-content .btn-save {
+background-color: #4CAF50;
+color: #fff;
+border: none;
+}
+
+.vehicle-drawer-content .btn-cancel {
+background-color: #f44336;
+color: #fff;
+border: none;
+}
+
+.vehicle-drawer-content .close {
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 30px;
+font-weight: bold;
+cursor: pointer;
+}
+
+
+.vehicle-drawer-content .btn-edit,
+.vehicle-drawer-content .btn-delete {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.vehicle-drawer-content .btn-delete {
+  background-color: #f44336;
+}
+.edit-vehicle-dialog {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.edit-vehicle-dialog-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.edit-vehicle-dialog-content label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.edit-vehicle-dialog-content input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-vehicle-dialog-content button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-vehicle-dialog-content button.btn-save {
+  float: right;
+}
+
+.edit-vehicle-dialog-content button.btn-save:hover {
+  background-color: #45a049;
+}
+
+.edit-vehicle-dialog-content button.btn-cancel {
+  float: left;
+  background-color: #f44336;
+}
+
+.edit-vehicle-dialog-content button.btn-cancel:hover {
+  background-color: #da190b;
+  color: white;
+}
+
+
+/* style for the edit vehicle dialog box */
