@@ -124,7 +124,7 @@
    <td id="vehicle-current-trip-status"></td>
  </tr>
 </table>
-<button class="btn-edit"onclick="editVehicle()">Edit</button>
+<button class="btn-edit"onclick="showEditVehicleDialog()">Edit</button>
 <button class="btn-delete onclick="deleteVehicle()">Delete</button>
 </div>
 
@@ -133,34 +133,36 @@
     <span class="close" onclick="hideEditVehicleDialog()">&times;</span>
     <h3>Edit Vehicle Details</h3>
     <form>
-      <div class="form-group">
-        <label for="device-info">Device Info:</label>
-        <input type="text" id="device-info" name="device-info">
-      </div>
-      <div class="form-group">
-        <label for="location">Location:</label>
-        <input type="text" id="location" name="location">
-      </div>
-      <div class="form-group">
-        <label for="battery-status">Battery Status:</label>
-        <input type="text" id="battery-status" name="battery-status">
-      </div>
-      <div class="form-group">
-        <label for="gprs">GPRS:</label>
-        <input type="text" id="gprs" name="gprs">
-      </div>
-      <div class="form-group">
-        <label for="alarm">Alarm:</label>
-        <input type="text" id="alarm" name="alarm">
-      </div>
-      <div class="form-group">
-        <label for="current-trip-status">Current Trip Status:</label>
-        <input type="text" id="current-trip-status" name="current-trip-status">
-      </div>
-      <button type="submit" class="btn-save" onclick="history.go(-1)">Save</button>
+        <div class="form-group">
+          <label for="device-info">Device Info:</label>
+          <input type="text" id="device-info" name="device-info">
+        </div>
 
 
-    </form>
+        <div class="form-group">
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location">
+        </div>
+        <div class="form-group">
+          <label for="battery-status">Battery Status:</label>
+          <input type="text" id="battery-status" name="battery-status">
+        </div>
+        <div class="form-group">
+          <label for="gprs">GPRS:</label>
+          <input type="text" id="gprs" name="gprs">
+        </div>
+        <div class="form-group">
+          <label for="alarm">Alarm:</label>
+          <input type="text" id="alarm" name="alarm">
+        </div>
+        <div class="form-group">
+          <label for="current-trip-status">Current Trip Status:</label>
+          <input type="text" id="current-trip-status" name="current-trip-status">
+        </div>
+        <button type="submit" class="btn-save" onclick="history.go(-1)">Save</button>
+   <button type="button" class="btn-cancel" onclick="hideEditVehicleDialog()">Cancel</button>
+
+      </form>
   </div>
 
 </div>
