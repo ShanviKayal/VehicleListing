@@ -19,18 +19,19 @@ display: none;
   height: 100vh;
 }
 
-/* style for the sidebar */
-.sidebar {
+/* s\tyle for the sidebar */
 
+
+
+.sidebar {
   background-color: white;
   height: 100%;
   width: 200px;
-
-
-padding: 20px;
-padding-top: 150px;
+  padding: 20px;
+  padding-top: 150px;
 
 }
+
 
 /* style for the sidebar links */
 .sidebar ul {
@@ -50,8 +51,6 @@ padding-top: 150px;
   display: block;
   color: #808080;
   padding: 10px;
-
-
  text-decoration: none;
  transition: background-color 0.5s;
 }
@@ -60,7 +59,7 @@ padding-top: 150px;
   .sidebar ul li a:focus,
 .sidebar ul li a:active {
 
-  color:#472183 ;
+  color:#4169E1  ;
   font-weight: bold;
 
 
@@ -72,12 +71,19 @@ padding-top: 150px;
   flex: 1;
   background-color:#ECF2FF;
   height:100%;
+  display: flex;
+   flex-direction: column;
 
 
 
 
 
-
+}
+.right-section {
+  background-color: white;
+  flex: 1;
+  padding: 20px;
+  height: 100%;
 }
 
 /* style for the vehicle list */
@@ -85,32 +91,37 @@ padding-top: 150px;
   margin-bottom: 20px;
   height:100%;
   align-content: center;
+  width:100%;
 
 }
 
 .vehicle-list h2 {
   text-align: center;
+
+
 }
 .vehicle-list h2 .word1 {
-  margin-top: 50;
-text-align: center;
-color:#472183;
-padding left: 50;
-font-weight: bold;
 
+  text-align: center;
+  color: #4169E1;
+  padding-left: 50px; /* added "px" unit */
+  font-weight: bold;
+font-family: 'Open Sans', sans-serif;
+  display: inline-block;
 
-
+  /* added display property */
 }
+
 .vehicle-list h2 .word2 {
-  margin-top: 50;
-color:black;
-text-align: center;
-font-weight: bold;
 
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
 
-
-padding left: 50;
+  display: inline-block; /* added display property */
 }
+
 
 .vehicle-table {
   width: 100%;
@@ -118,6 +129,7 @@ padding left: 50;
   margin: 0;
   padding: 0;
    max-width: 100%;
+
 }
 
 .vehicle-table th,
@@ -126,22 +138,66 @@ padding left: 50;
   text-align: left;
   border-bottom: 1px solid #ddd;
   width: 100%;
+
+
+
 }
 
 .vehicle-table th {
-  background-color: #f2f2f2;
+  background-color:white;
+
+
+}
+.vehicle-table th:nth-child(1) {
+  color:#4169E1;
+/* adjust this value to set the height of each table header cell */
+ text-align: center;
+ vertical-align: middle;
+ background-color:white ;
+ padding: 10px; /* adjust this value to change the size of the circular element */
+ overflow: hidden;
+
+}
+
+table th:nth-child(2) {
+  color: black;
+/* adjust this value to set the height of each table header cell */
+ text-align: center;
+ vertical-align: middle;
+ background-color:white ;
+}
+
+
+table th:nth-child(3) {
+  color:#4169E1;
+djust this value to set the height of each table header cell */
+ text-align: center;
+ vertical-align: middle;
+ background-color:white ;
+}
+
+
+table th:nth-child(4) {
+  color:black;
+ /* adjust this value to set the height of each table header cell */
+ text-align: center;
+ vertical-align: middle;
+ background-color:white ;
 }
 
 .vehicle-table td:last-child {
   text-align: center;
+  color:black;
+
 }
 
 
 .btn-info {
-  background-color: #4CAF50;
+  background-color:#4169E1;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 15px;
+    border-radius: 50%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -181,15 +237,15 @@ padding left: 50;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+
   display: none;
   align-items: center;
   justify-content: center;
   z-index: 999;
 }
 
-.vehicle-drawer-content {
-  background-color: #fff;
+    .vehicle-drawer-content {
+background-color:#fff;
   padding: 20px;
   width: 80%;
   max-width: 600px;
@@ -198,22 +254,25 @@ padding left: 50;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-border-radius: 10px;
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 
 .vehicle-drawer-content h3 {
   margin-top: 0;
+  color:#4169E1;
+
 }
 
 .vehicle-drawer-content table {
   width: 100%;
   margin-bottom: 20px;
    border-collapse: collapse;
+
+
 }
 .vehicle-drawer-content table td {
   padding: 10px;
@@ -242,13 +301,13 @@ padding: 10px;
 }
 
 .vehicle-drawer-content .btn-save {
-background-color: #4CAF50;
+background-color: #4169E1;
 color: #fff;
 border: none;
 }
 
 .vehicle-drawer-content .btn-cancel {
-background-color: #f44336;
+background-color: #FF6347;
 color: #fff;
 border: none;
 }
@@ -265,7 +324,7 @@ cursor: pointer;
 
 .vehicle-drawer-content .btn-edit,
 .vehicle-drawer-content .btn-delete {
-  background-color: #4CAF50;
+  background-color: #4169E1;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -291,10 +350,13 @@ cursor: pointer;
   overflow: auto;
   background-color: rgba(0,0,0,0.4);
 
+
+
 }
 
 .edit-vehicle-dialog-content {
-  background-color: #fff;
+color:#4169E1;
+background-color: #fff;
   margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -320,7 +382,7 @@ cursor: pointer;
 }
 
 .edit-vehicle-dialog-content button {
-  background-color: #4CAF50;
+  background-color: #4169E1;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -338,10 +400,10 @@ cursor: pointer;
 
 .edit-vehicle-dialog-content button.btn-cancel {
   float: left;
-  background-color: #f44336;
+  background-color: #FF6347;
 }
 
 .edit-vehicle-dialog-content button.btn-cancel:hover {
-  background-color: #da190b;
+  background-color: #FF6347;
   color: white;
 }
