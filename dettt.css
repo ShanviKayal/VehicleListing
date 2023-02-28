@@ -290,6 +290,7 @@ cursor: pointer;
   height: 100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.4);
+
 }
 
 .edit-vehicle-dialog-content {
@@ -297,12 +298,16 @@ cursor: pointer;
   margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 50%;
+  width: 60%;
+  height :100%;
 }
 
 .edit-vehicle-dialog-content label {
   display: block;
   margin-bottom: 10px;
+  width: 100%;
+
+
 }
 
 .edit-vehicle-dialog-content input[type=text] {
@@ -340,6 +345,3 @@ cursor: pointer;
   background-color: #da190b;
   color: white;
 }
-
-
-/* style for the edit vehicle dialog box */
